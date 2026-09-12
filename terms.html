@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Terms of Service for Sophia MOD, a Discord moderation and anti-scam application.">
+  <title>Sophia MOD — Terms of Service</title>
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --panel: #13131b;
+      --panel2: #191924;
+      --text: #eeeef6;
+      --muted: #a7a7bb;
+      --accent: #b38cff;
+      --accent2: #7c5cff;
+      --line: #2b2b3b;
+      --good: #8be9a8;
+      --warn: #ffd479;
+      --bad: #ff8f9c;
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(124,92,255,.16), transparent 32rem),
+        radial-gradient(circle at 90% 12%, rgba(179,140,255,.10), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: #c7adff; }
+    a:hover { color: white; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 30px;
+      align-items: center;
+      background: linear-gradient(145deg, rgba(25,25,36,.96), rgba(16,16,24,.96));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .avatar {
+      width: 170px;
+      height: 170px;
+      object-fit: contain;
+      border-radius: 22px;
+      background: #0e0e15;
+      border: 1px solid #34344a;
+      padding: 8px;
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0 0 8px; font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: -.04em; }
+    h2 { margin-top: 0; font-size: 1.45rem; }
+    h3 { margin-bottom: .45rem; font-size: 1.05rem; }
+    p { margin: .65rem 0; }
+
+    .tagline { color: var(--muted); font-size: 1.08rem; max-width: 760px; }
+    .meta { color: var(--muted); font-size: .9rem; margin-top: 14px; }
+
+    .pillrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .pill {
+      display: inline-flex;
+      padding: 6px 10px;
+      border: 1px solid #3c3657;
+      border-radius: 999px;
+      color: #d8c8ff;
+      background: rgba(124,92,255,.09);
+      font-size: .82rem;
+    }
+
+    .notice {
+      margin: 24px 0;
+      border: 1px solid #49405f;
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: rgba(179,140,255,.07);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0 30px;
+    }
+
+    .card, section {
+      background: rgba(19,19,27,.92);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .card strong { display:block; margin-bottom: 6px; }
+    .good { color: var(--good); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+
+    nav {
+      margin: 28px 0;
+      padding: 18px 22px;
+      background: rgba(19,19,27,.86);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    nav strong { display:block; margin-bottom:8px; }
+    nav a { display:inline-block; margin: 4px 14px 4px 0; text-decoration:none; }
+
+    section { margin: 16px 0; }
+    section h2 { color: #ddd0ff; }
+
+    ul { padding-left: 1.25rem; }
+    li { margin: .35rem 0; }
+
+    details {
+      margin: 12px 0;
+      border: 1px solid #303043;
+      border-radius: 12px;
+      background: rgba(255,255,255,.018);
+      padding: 10px 14px;
+    }
+    summary { cursor:pointer; font-weight:700; color:#ddd0ff; }
+
+    code {
+      background:#0b0b11;
+      border:1px solid #272735;
+      border-radius:6px;
+      padding:.08rem .35rem;
+    }
+
+    .small { color: var(--muted); font-size:.9rem; }
+    .footer { text-align:center; color:var(--muted); padding:30px 10px 0; font-size:.88rem; }
+
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; text-align:center; }
+      .avatar { margin:auto; }
+      .grid { grid-template-columns:1fr; }
+      nav a { display:block; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <img class="avatar" src="sophia_flip.webp" alt="Sophia MOD">
+      <div>
+        <h1>Sophia MOD</h1>
+        <div class="tagline">Terms of Service for the Discord moderation bot whose primary career goal is making scammers have a worse day.</div>
+        <div class="pillrow">
+          <span class="pill">Anti-scam moderation</span>
+          <span class="pill">Automated enforcement</span>
+          <span class="pill">Human review</span>
+          <span class="pill">Server-admin controlled</span>
+          <span class="pill">Zero promises of omniscience</span>
+        </div>
+        <div class="meta"><strong>Effective date:</strong> September 12, 2026 &nbsp;•&nbsp; <strong>Last updated:</strong> September 12, 2026</div>
+      </div>
+    </header>
+
+    <div class="notice">
+      <strong>Short version:</strong> Sophia is a moderation and anti-scam tool, not a magical truth machine. Server administrators decide to install and configure it. Sophia may inspect content, flag messages, send uncertain cases to moderators, delete malicious content, or take configured moderation actions. Do not abuse the service, do not try to weaponize it against innocent users, and do not treat an automated verdict as a judicial ruling handed down from the heavens.
+    </div>
+
+    <div class="grid">
+      <div class="card"><strong class="good">Admins stay in control</strong>Server owners and authorized administrators choose whether Sophia is installed, configured, and permitted to enforce moderation actions.</div>
+      <div class="card"><strong class="warn">Automation can be wrong</strong>OCR, hashes, link analysis, QR detection, rules, and every other computer-shaped thing on Earth can occasionally misunderstand something.</div>
+      <div class="card"><strong class="bad">Scammers are not a protected species</strong>Using Sophia to distribute scams, evade moderation, attack the service, or deliberately poison moderation data is not permitted.</div>
+    </div>
+
+    <nav aria-label="Terms sections">
+      <strong>Contents</strong>
+      <a href="#acceptance">Acceptance</a>
+      <a href="#service">What Sophia does</a>
+      <a href="#admins">Server administrators</a>
+      <a href="#automation">Automated moderation</a>
+      <a href="#conduct">Acceptable use</a>
+      <a href="#availability">Availability</a>
+      <a href="#third-party">Discord & third parties</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#termination">Suspension & termination</a>
+      <a href="#disclaimer">Disclaimers</a>
+      <a href="#liability">Liability</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="acceptance">
+      <h2>1. Acceptance of these Terms</h2>
+      <p>These Terms of Service ("Terms") govern access to and use of Sophia MOD ("Sophia," "the application," "the service," "we," "us," or "our"). By installing, configuring, invoking, administering, or otherwise using Sophia, you agree to these Terms.</p>
+      <p>If you install or configure Sophia on behalf of a Discord server, organization, or other community, you represent that you have authority to do so. If you do not have that authority, please do not appoint yourself Supreme Chancellor of somebody else's Discord server and configure moderation software there.</p>
+      <p>Users who participate in a Discord server where Sophia has been enabled may have messages and attachments processed for moderation and security purposes as described in the <a href="./">Privacy Policy</a>.</p>
+    </section>
+
+    <section id="service">
+      <h2>2. What Sophia does</h2>
+      <p>Sophia is a Discord moderation and anti-scam application designed to help server administrators detect and respond to abusive or deceptive content. Features may include:</p>
+      <ul>
+        <li>scanning messages and supported attachments for scam and abuse indicators;</li>
+        <li>extracting text from images using OCR;</li>
+        <li>detecting and decoding QR codes when reasonably possible;</li>
+        <li>analyzing URLs, domains, Discord invite links, prize claims, impersonation patterns, cryptocurrency or wallet lures, and related scam indicators;</li>
+        <li>using exact and perceptual image hashes to identify known or substantially similar scam imagery;</li>
+        <li>sending uncertain cases to authorized human moderators;</li>
+        <li>deleting content or taking other moderation actions when server configuration permits;</li>
+        <li>maintaining limited moderation state necessary to prevent duplicate or conflicting actions.</li>
+      </ul>
+      <p>Features may change over time. Sophia is intended to assist moderation; it does not replace competent human judgment, common sense, Discord's own safety systems, or the ancient administrative technique known as "looking at what actually happened."</p>
+    </section>
+
+    <section id="admins">
+      <h2>3. Server owners and administrators are responsible for configuration</h2>
+      <p>The owner and authorized administrators of each Discord server control whether Sophia is installed and how it is configured. They are responsible for:</p>
+      <ul>
+        <li>granting only the Discord permissions reasonably required for the features they enable;</li>
+        <li>selecting appropriate moderator roles, review channels, logging channels, and enforcement settings;</li>
+        <li>ensuring the people authorized to review or enforce moderation decisions are trusted to do so;</li>
+        <li>reviewing uncertain classifications rather than blindly treating every machine-generated signal as unquestionable fact;</li>
+        <li>using moderation features consistently with Discord's Terms, Community Guidelines, and applicable law;</li>
+        <li>removing Sophia if they no longer agree to these Terms or no longer want the service operating in their community.</li>
+      </ul>
+      <p>Giving a bot <code>Administrator</code> because clicking individual permission checkboxes feels emotionally inconvenient is strongly discouraged.</p>
+    </section>
+
+    <section id="automation">
+      <h2>4. Automated moderation, mistakes, and human review</h2>
+      <p>Sophia may use deterministic rules, image hashes, OCR results, QR analysis, URL/domain checks, reputation signals, configuration data, and other security indicators to classify content. Depending on server configuration and confidence level, Sophia may automatically remove content or take other configured moderation actions.</p>
+      <p>Automated systems can produce false positives, false negatives, incomplete results, decode failures, network failures, OCR mistakes, and other errors. Sophia may therefore send uncertain material to human moderators instead of automatically enforcing against it.</p>
+      <p>A Sophia classification such as <strong>Clean</strong>, <strong>Review</strong>, or <strong>Scam</strong> is an operational moderation assessment. It is not a statement that a person has committed a crime, breached a contract, achieved villain status, or otherwise been found legally responsible for anything.</p>
+      <p>Server administrators remain responsible for the moderation policies and final enforcement environment in their communities.</p>
+    </section>
+
+    <section id="conduct">
+      <h2>5. Acceptable use and things you absolutely should not do</h2>
+      <p>You may use Sophia for legitimate moderation, security, anti-abuse, testing, and administrative purposes. You may not use Sophia in a way that is unlawful, abusive, deceptive, or intended to interfere with the service.</p>
+
+      <details open>
+        <summary>Do not attack or sabotage the service</summary>
+        <ul>
+          <li>Do not intentionally overload Sophia, flood commands, manufacture abusive traffic, or attempt denial-of-service behavior.</li>
+          <li>Do not exploit vulnerabilities, bypass authorization checks, access another server's moderation information, or attempt to obtain credentials or private infrastructure data.</li>
+          <li>Do not deliberately submit malicious files or pathological content solely to exhaust CPU, memory, storage, OCR, image decoders, network bandwidth, or moderator patience.</li>
+        </ul>
+      </details>
+
+      <details open>
+        <summary>Do not weaponize moderation</summary>
+        <ul>
+          <li>Do not knowingly configure Sophia to target people for unlawful harassment or discrimination.</li>
+          <li>Do not intentionally mislabel benign content as malicious in order to poison learned moderation data.</li>
+          <li>Do not attempt to manipulate review workflows, impersonate authorized moderators, or cause repeated punishment of the same event.</li>
+        </ul>
+      </details>
+
+      <details open>
+        <summary>And, because apparently this needs its own paragraph: do not use the anti-scam bot to run scams</summary>
+        <p>Do not use Sophia, its commands, review systems, infrastructure, branding, or access to distribute phishing, fake giveaways, malware, credential theft, fraudulent cryptocurrency promotions, malicious QR codes, deceptive invite links, or related garbage. The irony would be impressive. It would still be prohibited.</p>
+      </details>
+    </section>
+
+    <section id="availability">
+      <h2>6. Availability, maintenance, and changes to the service</h2>
+      <p>Sophia is provided on an operationally reasonable basis. We may update, restart, maintain, modify, suspend, restrict, or discontinue any part of the service when reasonably necessary for maintenance, security, abuse prevention, infrastructure changes, Discord API changes, legal compliance, or because computers occasionally decide that today is the day they would like to become a problem.</p>
+      <p>No specific uptime, response time, processing speed, feature permanence, or service-level guarantee is promised unless separately agreed in writing.</p>
+      <p>Discord outages, CDN failures, API rate limits, deleted attachments, unavailable messages, third-party network failures, and other events outside our control may prevent Sophia from processing or enforcing against content.</p>
+    </section>
+
+    <section id="third-party">
+      <h2>7. Discord and other third-party services</h2>
+      <p>Sophia operates through Discord and may depend on infrastructure or software provided by third parties. Discord is a separate service governed by its own terms, policies, API rules, and availability.</p>
+      <p>We are not responsible for changes Discord makes to its platform, permissions, APIs, privileged intents, rate limits, content availability, moderation systems, or account enforcement.</p>
+      <p>References or links to third-party websites do not mean we endorse them. In fact, given Sophia's job description, there is a nontrivial chance the link is being examined specifically because nobody should endorse it.</p>
+    </section>
+
+    <section id="privacy">
+      <h2>8. Privacy and data handling</h2>
+      <p>Use of Sophia is also governed by the Sophia MOD <a href="./">Privacy Policy</a>, which explains what information may be processed, why Message Content access is necessary, retention practices, moderation evidence, security records, and deletion requests.</p>
+      <p>Privacy Policy: <a href="https://johncsuti.github.io/DVA-10-Privacy/">https://johncsuti.github.io/DVA-10-Privacy/</a></p>
+      <p>If these Terms discuss data handling differently from the Privacy Policy, the Privacy Policy controls for the description of Sophia's privacy practices.</p>
+    </section>
+
+    <section id="termination">
+      <h2>9. Suspension, removal, and termination</h2>
+      <p>Server owners may stop using Sophia at any time by removing the application from their Discord server. We may suspend or restrict access to Sophia when reasonably necessary to protect users, infrastructure, Discord, third parties, or the integrity of the service.</p>
+      <p>Reasons may include material violations of these Terms, attempts to compromise the service, abusive automated traffic, deliberate moderation-data poisoning, unlawful activity, or use that creates an unreasonable security or operational risk.</p>
+      <p>Where practical and appropriate, we may provide notice or an opportunity to correct a problem. Serious security abuse does not come with a ceremonial three-warning loyalty card.</p>
+    </section>
+
+    <section id="disclaimer">
+      <h2>10. Disclaimer of warranties</h2>
+      <p>To the maximum extent permitted by applicable law, Sophia is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express, implied, or statutory, including warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, availability, or error-free operation.</p>
+      <p>We do not warrant that Sophia will detect every scam, identify every malicious image, decode every QR code, understand every joke, survive every bizarre image format ever invented, or perfectly distinguish a scam campaign from the world's most suspicious-looking legitimate giveaway.</p>
+      <p>No moderation or security system should be treated as the sole control protecting valuable accounts, credentials, funds, or sensitive systems.</p>
+    </section>
+
+    <section id="liability">
+      <h2>11. Limitation of liability</h2>
+      <p>To the maximum extent permitted by applicable law, Sophia's operators, developers, maintainers, and service providers will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, revenue, profits, goodwill, access, opportunities, or business arising from or related to use of or inability to use Sophia.</p>
+      <p>This includes losses resulting from moderation decisions, missed scams, false positives, deleted content, unavailable evidence, Discord API behavior, service interruptions, third-party failures, administrator configuration choices, compromised Discord accounts, or actions taken by server moderators.</p>
+      <p>Nothing in these Terms excludes or limits liability where doing so would be prohibited by applicable law.</p>
+    </section>
+
+    <section id="indemnity">
+      <h2>12. Your responsibility for your use</h2>
+      <p>You are responsible for your own use of Sophia and, if you administer a server, for the configuration and moderation policies you choose. To the extent permitted by applicable law, you agree not to hold Sophia's operators responsible for claims arising solely from your unlawful use, deliberate misuse, unauthorized configuration, or violation of these Terms.</p>
+      <p>This section is not an invitation to turn moderation into a contact sport. Configure the bot responsibly.</p>
+    </section>
+
+    <section id="changes">
+      <h2>13. Changes to these Terms</h2>
+      <p>We may update these Terms when Sophia's features, legal obligations, security practices, hosting arrangements, or Discord platform requirements materially change.</p>
+      <p>The current version will be published on this page with an updated effective or last-updated date. Continued use of Sophia after revised Terms become effective constitutes acceptance of the revised Terms to the extent permitted by applicable law.</p>
+      <p>We are not going to rewrite the Terms at 3:00 AM solely to add a secret clause transferring ownership of your refrigerator. Material changes will actually relate to the service.</p>
+    </section>
+
+    <section id="misc">
+      <h2>14. General terms</h2>
+      <ul>
+        <li>If part of these Terms is found unenforceable, the remaining provisions remain in effect to the extent permitted by law.</li>
+        <li>A failure to enforce a provision immediately does not permanently waive that provision.</li>
+        <li>You may not use Sophia in a manner that requires us to violate Discord's platform rules or applicable law.</li>
+        <li>These Terms and the Privacy Policy form the primary public terms governing ordinary use of Sophia unless a separate written agreement expressly applies.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>15. Contact</h2>
+      <p>Questions about these Terms, privacy, data handling, or Sophia's moderation service may be sent to:</p>
+      <p><strong>Email:</strong> <a href="mailto:privacy@coolcomputers.info">privacy@coolcomputers.info</a></p>
+      <p><strong>Privacy Policy:</strong> <a href="./">https://johncsuti.github.io/DVA-10-Privacy/</a></p>
+      <p class="small">Please include enough information to understand the request. Sending "your bot sucks" technically conveys a viewpoint, but it does not provide much material for troubleshooting.</p>
+    </section>
+
+    <div class="footer">
+      <p><a href="./">Privacy Policy</a> &nbsp;•&nbsp; <strong>Terms of Service</strong></p>
+      <p>Sophia MOD — attempting to make Discord scam moderation boring again.</p>
+      <p>This page exists because apparently "don't abuse the anti-scam robot" also needed several thousand words of supporting documentation.</p>
+    </div>
+  </main>
+</body>
+</html>
