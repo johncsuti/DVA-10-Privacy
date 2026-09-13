@@ -11,7 +11,7 @@
       --bg: #0b0b10;
       --panel: #13131b;
       --panel2: #191924;
-      --text: #eeeeF6;
+      --text: #eeeef6;
       --muted: #a7a7bb;
       --accent: #b38cff;
       --accent2: #7c5cff;
@@ -112,6 +112,7 @@
     .card strong { display:block; margin-bottom: 6px; }
     .good { color: var(--good); }
     .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
 
     nav {
       margin: 28px 0;
@@ -168,7 +169,7 @@
       <img class="avatar" src="sophia_flip.webp" alt="Sophia MOD">
       <div>
         <h1>Sophia MOD</h1>
-        <div class="tagline">Privacy Policy for the Discord moderation and anti-scam application that would very much prefer people stop posting scam garbage.</div>
+        <div class="tagline">Privacy Policy for the Discord moderation and anti-scam application that has to look at suspicious garbage so your moderators hopefully do not have to.</div>
         <div class="pillrow">
           <span class="pill">Discord moderation</span>
           <span class="pill">Anti-scam analysis</span>
@@ -181,13 +182,13 @@
     </header>
 
     <div class="notice">
-      <strong>Short version:</strong> Sophia processes Discord messages and attachments for moderation, anti-scam, abuse-prevention, and security purposes. We do not sell message content, use it for advertising, or use it to train machine-learning or AI models. Server administrators choose whether to deploy Sophia, and individual users generally cannot opt out of moderation scanning inside a server where Sophia is enabled.
+      <strong>Short version:</strong> Sophia processes Discord messages and attachments for moderation, anti-scam, abuse-prevention, and security purposes. We do not sell message content, build advertising profiles from it, or use it to train machine-learning or generative-AI models. Server administrators choose whether to deploy Sophia. If Sophia is enabled in a channel, scammers do not get a magical privacy force field by declining to mention the bot.
     </div>
 
     <div class="grid">
-      <div class="card"><strong class="good">No ad profiling</strong>Message content is not used to build advertising profiles or sold to advertisers.</div>
-      <div class="card"><strong class="good">No AI training</strong>User message content is not used to train machine-learning or generative-AI models.</div>
-      <div class="card"><strong class="warn">Moderation requires content access</strong>Sophia must inspect ordinary messages and attachments to detect scams that do not voluntarily mention or invoke the bot.</div>
+      <div class="card"><strong class="good">No ad profiling</strong>Message content is not sold to advertisers, used to target ads, or quietly turned into a marketing dossier.</div>
+      <div class="card"><strong class="good">No AI training</strong>User message content is not used to train machine-learning or generative-AI models. Sophia is here to moderate Discord, not consume it for homework.</div>
+      <div class="card"><strong class="warn">Moderation requires content access</strong>A passive anti-scam bot has to inspect ordinary messages and attachments because scammers have stubbornly refused to invoke <code>/please-moderate-my-scam</code>.</div>
     </div>
 
     <nav aria-label="Policy sections">
@@ -195,21 +196,24 @@
       <a href="#scope">Scope</a>
       <a href="#collection">Data we process</a>
       <a href="#purpose">Why we process it</a>
+      <a href="#message-content">Message Content</a>
       <a href="#automation">Automated moderation</a>
       <a href="#retention">Retention</a>
       <a href="#sharing">Sharing</a>
       <a href="#security">Security</a>
-      <a href="#rights">Your choices & deletion</a>
+      <a href="#rights">Choices & deletion</a>
       <a href="#children">Children</a>
       <a href="#changes">Changes</a>
       <a href="#contact">Contact</a>
+      <a href="terms.html">Terms of Service</a>
     </nav>
 
     <section id="scope">
       <h2>1. Scope and who this policy covers</h2>
       <p>This Privacy Policy applies to Sophia MOD ("Sophia," "the application," "we," "us," or "our") when Sophia is installed in or used with a Discord server. It describes how data is processed when Sophia performs moderation, anti-scam scanning, moderator review, abuse prevention, auditing, and related security functions.</p>
-      <p>Sophia is an independent third-party Discord application. Discord is a separate service with its own terms and privacy practices. This policy governs Sophia's processing and does not replace Discord's own policies.</p>
+      <p>Sophia is an independent third-party Discord application. Discord is a separate service with its own terms and privacy practices. This policy governs Sophia's processing and does not replace Discord's policies.</p>
       <p>Server owners and administrators decide whether to install and configure Sophia in their communities. By participating in a server where Sophia has been enabled, messages and attachments you post in channels Sophia is permitted to access may be processed for moderation and security purposes.</p>
+      <p>In less ceremonial language: if a server administrator installs an anti-scam bot and gives it access to a channel, content posted in that channel may be examined for scams. That is the job.</p>
     </section>
 
     <section id="collection">
@@ -220,7 +224,7 @@
         <summary>Discord identifiers and metadata</summary>
         <ul>
           <li>Discord user IDs and usernames/display names available with the message;</li>
-          <li>server (guild), channel, thread where applicable, and message IDs;</li>
+          <li>server (guild), channel, and message IDs;</li>
           <li>message timestamps and moderation-event timestamps;</li>
           <li>message URLs or jump links used by moderators to locate evidence;</li>
           <li>basic attachment metadata such as file name, type, size, and source URL.</li>
@@ -249,7 +253,7 @@
         </ul>
       </details>
 
-      <p>Sophia is not designed to collect passwords, payment-card details, government identification numbers, or other sensitive information unrelated to moderation. Users should never post such information in Discord messages.</p>
+      <p>Sophia is not designed to collect passwords, payment-card details, government identification numbers, authentication tokens, or other sensitive information unrelated to moderation. Please do not put those things in Discord messages. Sophia would prefer not to become the unwilling archivist of your bad decisions.</p>
     </section>
 
     <section id="purpose">
@@ -265,60 +269,63 @@
         <li>investigating abuse, diagnosing failures, protecting the application, and maintaining service reliability.</li>
       </ul>
 
-      <p><strong>Sophia does not use message-content data for targeted advertising, commercial behavioral profiling, or the training of machine-learning or generative-AI models.</strong></p>
+      <p><strong>Sophia does not use Message Content for targeted advertising, commercial behavioral profiling, or training machine-learning or generative-AI models.</strong></p>
+      <p>The business model is not "read Discord messages and sell everyone a toaster." There is no advertising profile hiding behind the moderation database.</p>
     </section>
 
     <section id="message-content">
       <h2>4. Why Message Content access is necessary</h2>
       <p>Sophia is a passive moderation system. Scam accounts do not voluntarily invoke moderation commands before posting malicious material. To perform its core function, Sophia must be able to inspect ordinary messages and attachments in channels where server administrators have authorized it to operate.</p>
       <p>This includes analyzing message text, attachment images, extracted OCR text, QR-code data, and links for scam indicators. Requiring every user to mention Sophia or invoke a slash command would defeat the anti-scam purpose of the service.</p>
+      <p>This access is used for moderation and security. It is not an excuse to read everyone's conversations for entertainment, advertising, AI training, or some future career in digital gossip.</p>
     </section>
 
     <section id="automation">
       <h2>5. Automated moderation and human review</h2>
       <p>Sophia uses deterministic rules, hashes, OCR, link/domain checks, and related security signals to classify content. Some server configurations may permit Sophia to automatically remove content when the available evidence strongly indicates a scam.</p>
       <p>Content that is uncertain or cannot be analyzed reliably may be referred to authorized moderators for human review. Human reviewers can classify the content and determine whether moderation action is appropriate.</p>
-      <p>Automated systems are imperfect. A classification is a moderation/security assessment, not a legal finding about a user or their intent.</p>
+      <p>Automated systems are imperfect. OCR can misread text. Links can die. Images can be malformed. QR libraries can have opinions. A classification is therefore a moderation/security assessment, not a legal finding about a user or their intent.</p>
     </section>
 
     <section id="retention">
-      <h2>6. Data retention</h2>
-      <p>For production operation, Sophia's standard policy is to retain raw message content and content-derived evidence such as OCR text, decoded QR content, and attachment references for no longer than <strong>30 days</strong> unless longer retention is reasonably necessary for an active moderation case, abuse or security investigation, legal obligation, dispute, or a user-requested review.</p>
+      <h2>6. Data retention: Sophia is not building a museum of your Discord history</h2>
+      <p>For production operation, Sophia's standard policy is to retain raw Message Content and content-derived evidence such as OCR text, decoded QR content, and attachment references for no longer than <strong>30 days</strong> unless longer retention is reasonably necessary for an active moderation case, abuse or security investigation, legal obligation, dispute, or user-requested review.</p>
       <p>Minimal security and moderation records may be retained longer where doing so is necessary to prevent repeated abuse, preserve the integrity of moderation actions, or recognize previously confirmed scam campaigns. Examples may include image hashes, message/user/channel identifiers associated with moderation actions, action state, timestamps, and moderator decisions.</p>
+      <p>Where possible, long-lived security data is minimized or de-identified so Sophia can remember that a known scam image is bad without needing to keep the entire surrounding conversation forever.</p>
       <p>Data is deleted or de-identified when it is no longer reasonably necessary for the purpose for which it was retained. Server administrators may also remove Sophia from their server, which prevents future collection from that server.</p>
     </section>
 
     <section id="sharing">
       <h2>7. When information may be disclosed</h2>
-      <p>We do not sell personal information or message content. We may disclose limited data only when reasonably necessary in the following circumstances:</p>
+      <p>We do not sell personal information or Message Content. We may disclose limited data only when reasonably necessary in the following circumstances:</p>
       <ul>
         <li><strong>Authorized server moderators:</strong> moderation evidence may be displayed to moderators responsible for reviewing or enforcing server rules;</li>
         <li><strong>Infrastructure and service providers:</strong> limited data may be processed by providers necessary to host or operate Sophia, subject to appropriate access controls;</li>
         <li><strong>Security and abuse response:</strong> information may be used or disclosed as reasonably necessary to investigate attacks, fraud, abuse, or threats to users, Discord communities, Sophia, or its infrastructure;</li>
         <li><strong>Legal requirements:</strong> information may be preserved or disclosed when required by applicable law, valid legal process, or to protect legal rights and safety.</li>
       </ul>
-      <p>Sophia does not provide message content to advertisers or data brokers.</p>
+      <p>Sophia does not provide Message Content to advertisers or data brokers. There is no secret fourth bullet labeled "sell it to the highest bidder."</p>
     </section>
 
     <section id="security">
       <h2>8. Security</h2>
       <p>We use reasonable administrative and technical safeguards intended to protect information processed by Sophia. These controls include restricted access to moderation data, separation of moderation functions from public interfaces, encrypted network transport where supported, least-privilege access, and operational logging for security and reliability.</p>
       <p>Production systems that store Message Content data must use encryption at rest at the storage, filesystem, volume, database, or equivalent infrastructure layer before Sophia is placed into production with such storage enabled.</p>
-      <p>No system can guarantee perfect security. Users and server administrators should report suspected security issues promptly.</p>
+      <p>No system can guarantee perfect security. Anyone promising an absolutely unhackable computer has either invented something remarkable or is about to sell you something remarkable. Suspected security issues should be reported promptly.</p>
     </section>
 
     <section id="rights">
       <h2>9. User choices, opt-out, access, and deletion</h2>
       <h3>Individual opt-out</h3>
-      <p>Individual users generally cannot opt out of moderation scanning while continuing to post in a server and channel where the server's administrators have enabled Sophia. Allowing individual opt-out would permit malicious users to bypass the server's anti-scam controls.</p>
+      <p>Individual users generally cannot opt out of moderation scanning while continuing to post in a server and channel where the server's administrators have enabled Sophia. Allowing individual opt-out would create the world's most convenient anti-moderation button for scammers.</p>
       <p>Server owners and administrators can disable Sophia's access to channels or remove the application from the server, which stops future processing in those locations.</p>
 
       <h3>Access or deletion requests</h3>
-      <p>Users may request deletion of stored activity data associated with their Discord account by emailing <a href="mailto:privacy@coolcomputers.info">privacy@coolcomputers.info</a>. Include your Discord user ID so the relevant records can be identified. Do not send passwords, authentication tokens, or other account credentials.</p>
+      <p>Users may request deletion of stored activity data associated with their Discord account by emailing <a href="mailto:privacy@coolcomputers.info">privacy@coolcomputers.info</a>. Include your Discord user ID so the relevant records can be identified. Do not send passwords, authentication tokens, two-factor codes, or other account credentials.</p>
       <p>We may request reasonable information needed to verify that a request concerns the correct account. After verification, we will delete or de-identify applicable stored activity data unless retention is reasonably necessary for security, abuse prevention, an active moderation dispute, compliance with law, or another legitimate obligation.</p>
 
       <h3>Appeals and server moderation</h3>
-      <p>Questions about a specific server moderation decision should generally be directed to that server's moderators or administrators. Sophia may provide technical evidence, but individual communities control their own rules and moderation policies.</p>
+      <p>Questions about a specific server moderation decision should generally be directed to that server's moderators or administrators. Sophia may provide technical evidence, but individual communities control their own rules and moderation policies. The bot is not the Supreme Court of Discord.</p>
     </section>
 
     <section id="children">
@@ -332,29 +339,37 @@
     </section>
 
     <section id="third-parties">
-      <h2>12. Third-party services and links</h2>
-      <p>Messages analyzed by Sophia may contain links to third-party websites or services. The presence of a link in moderation evidence does not mean we endorse or control that third party. Third-party services operate under their own terms and privacy policies.</p>
-      <p>Discord itself is a separate platform. Users should review Discord's applicable privacy and developer policies for information about Discord's own handling of data.</p>
+      <h2>12. Third-party services and suspicious links</h2>
+      <p>Messages analyzed by Sophia may contain links to third-party websites or services. The presence of a link in moderation evidence does not mean we endorse or control that third party. Given Sophia's job, a link appearing in moderation evidence may mean nearly the opposite.</p>
+      <p>Discord itself is a separate platform governed by its own terms, privacy practices, developer requirements, APIs, and availability. Users should review Discord's applicable policies for information about Discord's own handling of data.</p>
+    </section>
+
+    <section id="terms">
+      <h2>13. Terms of Service</h2>
+      <p>Use of Sophia is also governed by the <a href="terms.html">Sophia MOD Terms of Service</a>. The Terms cover administration, acceptable use, automated moderation, service availability, prohibited abuse, disclaimers, and the extremely unsurprising rule that the anti-scam bot may not be used to operate scams.</p>
+      <p><strong>Terms of Service:</strong> <a href="https://johncsuti.github.io/DVA-10-Privacy/terms.html">https://johncsuti.github.io/DVA-10-Privacy/terms.html</a></p>
     </section>
 
     <section id="changes">
-      <h2>13. Changes to this policy</h2>
-      <p>We may update this policy when Sophia's features, data practices, legal obligations, or security controls change. The "Last updated" date at the top of this page identifies the current version. Material changes will be reflected on this page before or when the changed practice takes effect, as appropriate.</p>
+      <h2>14. Changes to this policy</h2>
+      <p>We may update this policy when Sophia's features, data practices, legal obligations, security controls, hosting arrangements, or Discord platform requirements change. The "Last updated" date at the top of this page identifies the current version.</p>
+      <p>Material changes will be reflected here before or when the changed practice takes effect, as appropriate. We are not going to quietly replace the privacy policy at 3:00 AM with "we now own your toaster."</p>
     </section>
 
     <section id="contact">
-      <h2>14. Privacy contact</h2>
-      <p>For privacy questions, access/deletion requests, or concerns about Sophia's handling of data:</p>
+      <h2>15. Privacy contact</h2>
+      <p>For privacy questions, access/deletion requests, concerns about Sophia's handling of data, or a security/privacy issue that genuinely needs a human:</p>
       <p><strong>Email:</strong> <a href="mailto:privacy@coolcomputers.info">privacy@coolcomputers.info</a></p>
-      <p class="small">For a deletion request, include your Discord user ID and enough context for us to identify the relevant records. Never send a Discord token, password, two-factor authentication code, or other login credential.</p>
+      <p><strong>Terms of Service:</strong> <a href="terms.html">https://johncsuti.github.io/DVA-10-Privacy/terms.html</a></p>
+      <p class="small">For a deletion request, include your Discord user ID and enough context for us to identify the relevant records. Never send a Discord token, password, two-factor authentication code, or other login credential. We cannot emphasize that last sentence enough.</p>
     </section>
 
     <section id="definitions">
-      <h2>15. Definitions</h2>
+      <h2>16. Definitions, because apparently every acronym eventually demands paperwork</h2>
       <table>
         <thead><tr><th>Term</th><th>Meaning in this policy</th></tr></thead>
         <tbody>
-          <tr><td>Message Content</td><td>Text, attachments, embeds or related content available to Sophia through Discord where authorized.</td></tr>
+          <tr><td>Message Content</td><td>Text, attachments, embeds, or related content available to Sophia through Discord where authorized.</td></tr>
           <tr><td>Moderation evidence</td><td>Information used to explain, review, or support a moderation classification or action.</td></tr>
           <tr><td>OCR</td><td>Optical character recognition used to extract visible text from an image for moderation analysis.</td></tr>
           <tr><td>Perceptual hash</td><td>A compact image fingerprint used to identify visually similar images even when they are not byte-for-byte identical.</td></tr>
@@ -364,7 +379,9 @@
     </section>
 
     <div class="footer">
-      <p>© 2026 Sophia MOD. This page exists because apparently “please don't scam people” needed several thousand words of supporting documentation.</p>
+      <p><strong>Privacy Policy</strong> &nbsp;•&nbsp; <a href="terms.html">Terms of Service</a></p>
+      <p>Sophia MOD — reading suspicious garbage so hopefully your moderators have to read less of it.</p>
+      <p>This page exists because apparently “please don't scam people” needed several thousand words of supporting documentation.</p>
     </div>
   </main>
 </body>
